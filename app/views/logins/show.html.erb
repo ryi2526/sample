@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @login.UserID %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @login.Password %>
+</p>
+
+<p>
+  <strong>Peerid:</strong>
+  <%= @login.PeerID %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @login.UserName %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @login.Icon %>
+</p>
+
+<p>
+  <strong>Ch notification:</strong>
+  <%= @login.Ch_notification %>
+</p>
+
+<p>
+  <strong>Callid:</strong>
+  <%= @login.CallID %>
+</p>
+
+<%= link_to 'Edit', edit_login_path(@login) %> |
+<%= link_to 'Back', logins_path %>

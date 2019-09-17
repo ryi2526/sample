@@ -1,0 +1,52 @@
+<%= form_with(model: login, local: true) do |form| %>
+  <% if login.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(login.errors.count, "error") %> prohibited this login from being saved:</h2>
+
+      <ul>
+      <% login.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :UserID %>
+    <%= form.text_area :UserID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Password %>
+    <%= form.text_area :Password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PeerID %>
+    <%= form.text_area :PeerID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :UserName %>
+    <%= form.text_area :UserName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Icon %>
+    <%= form.text_area :Icon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Ch_notification %>
+    <%= form.number_field :Ch_notification %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CallID %>
+    <%= form.text_area :CallID %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

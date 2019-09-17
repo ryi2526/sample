@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  UserID: MyText
+  Password: MyText
+  PeerID: MyText
+  UserName: MyText
+  Icon: MyText
+  Ch_notification: 1
+  CallID: MyText
+
+two:
+  UserID: MyText
+  Password: MyText
+  PeerID: MyText
+  UserName: MyText
+  Icon: MyText
+  Ch_notification: 1
+  CallID: MyText

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Logins</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Userid</th>
+      <th>Password</th>
+      <th>Peerid</th>
+      <th>Username</th>
+      <th>Icon</th>
+      <th>Ch notification</th>
+      <th>Callid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @logins.each do |login| %>
+      <tr>
+        <td><%= login.UserID %></td>
+        <td><%= login.Password %></td>
+        <td><%= login.PeerID %></td>
+        <td><%= login.UserName %></td>
+        <td><%= login.Icon %></td>
+        <td><%= login.Ch_notification %></td>
+        <td><%= login.CallID %></td>
+        <td><%= link_to 'Show', login %></td>
+        <td><%= link_to 'Edit', edit_login_path(login) %></td>
+        <td><%= link_to 'Destroy', login, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Login', new_login_path %>
